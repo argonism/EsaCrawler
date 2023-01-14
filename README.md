@@ -1,6 +1,7 @@
 # Esa Crawler
 
-simple esa.io crawle through API
+Simple esa.io crawler through API.
+Crawled result is output as jsonl that consisting of one article per line.
 
 # Get started
 
@@ -14,7 +15,8 @@ poetry install
 
 ## Setup
 
-you need to specify environment variable ESA_ACCESS_TOKEN, ESA_TEAM_NAME in your .env file.
+You need to specify environment variable ESA_ACCESS_TOKEN, ESA_TEAM_NAME in your .env file.
+
 ``` .env
 ESA_ACCESS_TOKEN={YOUR ACCESS TOKEN}
 ESA_TEAM_NAME={YOUR TEAM NAME}
@@ -22,7 +24,7 @@ ESA_TEAM_NAME={YOUR TEAM NAME}
 
 ## Crawl
 
-crawl your esa team posts
+Crawl your esa team posts
 
 ``` shell
 poetry run python crawler.py

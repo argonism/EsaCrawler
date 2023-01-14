@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "esacrawler"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+piyo = "^1.0.2"
+python-dotenv = "^0.21.0"
+tqdm = "^4.64.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+# 'extend-exclude' excludes files or directories in addition to the defaults
+extend-exclude = '''
+(
+    .venv
+)
+'''
